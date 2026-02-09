@@ -286,7 +286,7 @@
 
         const pretty = leads.slice(0, 10).map((l, i) => {
           const date = new Date(l.createdAt).toLocaleString();
-          return ${i+1}) ${l.firstName} ${l.lastName}, ${l.age} лет — ${l.phone}\n   кружки: ${l.clubs.join(', ')}\n   ${date};
+          return `${i+1}) ${l.firstName} ${l.lastName}, ${l.age} лет — ${l.phone}\n   кружки: ${l.clubs.join(', ')}\n   ${date}`;
         }).join('\n\n');
 
         msg.className = 'msg';
